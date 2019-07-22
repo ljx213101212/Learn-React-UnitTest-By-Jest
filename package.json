@@ -21,13 +21,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "unittest": "jest"
+    "unittest": "jest",
+    "jesttest": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
