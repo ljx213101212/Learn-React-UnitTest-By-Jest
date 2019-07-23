@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "history": "^4.9.0",
     "jest-dom": "^3.3.0",
     "react": "^16.8.6",
@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "unittest": "jest",
     "jesttest": "jest",
-    "testtarget":"jest --verbose ./src/__jest_samples_test__/async.test.js"
+    "testtarget": "jest --verbose ./src/__jest_samples_test__/mock_function.test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
