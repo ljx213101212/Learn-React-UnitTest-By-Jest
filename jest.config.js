@@ -4,6 +4,7 @@ module.exports = {
       {
         "displayName": "TestTargetOnly",
         "testMatch": ["<rootDir>/src/__jest_samples_test__/*.js"]
-      }]
+      }
+    ]
 }
   

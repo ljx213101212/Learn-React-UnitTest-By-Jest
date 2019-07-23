@@ -22,7 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "unittest": "jest",
-    "jesttest": "jest"
+    "jesttest": "jest",
+    "testtarget":"jest --verbose ./src/__jest_samples_test__/async.test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
