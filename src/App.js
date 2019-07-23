@@ -1,7 +1,13 @@
 import React from 'react';
-import './App.css';
+import 'App.css';
+import sum from '__jest_samples_target__/sum';
 
 function App() {
+
+  let smallTest = () =>{
+    console.log(sum(2,3));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,6 +22,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          {smallTest()}
         </a>
       </header>
     </div>
