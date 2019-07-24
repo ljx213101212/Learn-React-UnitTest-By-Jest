@@ -5,7 +5,11 @@
   "dependencies": {
     "axios": "^0.18.1",
     "history": "^4.9.0",
+    "jest-changed-files": "^24.8.0",
+    "jest-diff": "^24.8.0",
     "jest-dom": "^3.3.0",
+    "jest-worker": "^24.6.0",
+    "pretty-format": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
@@ -23,14 +27,18 @@
     "eject": "react-scripts eject",
     "unittest": "jest",
     "jesttest": "jest",
-    "testtarget": "jest --verbose ./src/__jest_samples_test__/mock_function.test.js"
+    "testtarget": "jest --verbose ./src/__jest_samples_test__/heavy_task_test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "jest"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
     ]
   },
   "browserslist": {
@@ -45,5 +53,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "babel-jest": "^24.8.0"
+  }
 }
